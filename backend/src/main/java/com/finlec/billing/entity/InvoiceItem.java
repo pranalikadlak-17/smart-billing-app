@@ -24,6 +24,7 @@ public class InvoiceItem {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "product_id", nullable = false)
+    @com.fasterxml.jackson.annotation.JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Product product;
 
     private Integer quantity;

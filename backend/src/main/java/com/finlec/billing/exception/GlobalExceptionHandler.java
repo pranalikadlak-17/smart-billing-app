@@ -55,6 +55,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApiError> handleGeneric(Exception ex) {
+    	ex.printStackTrace();
         ApiError error = new ApiError(
                 HttpStatus.INTERNAL_SERVER_ERROR.value(),
                 "Internal Server Error",
