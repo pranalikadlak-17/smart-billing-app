@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Perforated / torn-edge effect for invoice-style cards */
+.torn-edge::before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 100%;
+  background-image: radial-gradient(circle at 8px 0, transparent 6px, #F1F0EB 6px);
+  background-size: 16px 10px;
+  background-repeat: repeat-x;
+  margin-bottom: -1px;
+}
+
+/* Rubber-stamp badge look */
+.stamp {
+  border: 3px double currentColor;
+  border-radius: 6px;
+  transform: rotate(-4deg);
+  letter-spacing: 0.12em;
+  opacity: 0.9;
+}
