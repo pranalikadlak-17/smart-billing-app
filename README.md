@@ -21,6 +21,17 @@ npm run dev
 
 Then open http://localhost:5173.
 
+## Screenshots
+
+### Dashboard
+![Dashboard](./frontend/screenshots/dashboard.png)
+
+### Invoices
+![Invoices List](./frontend/screenshots/invoices-list.png)
+
+### Customers
+![Customers](./frontend/screenshots/customers.png)
+
 ## What this covers
 
 | Assessment criterion       | Where it lives                                              |
